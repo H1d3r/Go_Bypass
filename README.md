@@ -16,6 +16,8 @@ go run main -h
 ![631dd04ce2b3c5f548ad8b99c979db5](https://user-images.githubusercontent.com/82130343/147847431-cd4cfb42-ca9b-4a05-aca3-1ab0f2d80eea.png)
 
 收回之前的话，卡巴动态也发出来给大家玩了！
+演示视频
+https://www.bilibili.com/video/BV1Ym4y1Q7kf#reply97248324864
 
 后续模等待添加.............
 ## 微信公众：一颗好韭菜
