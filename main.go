@@ -71,7 +71,7 @@ func main() {
 		fmt.Println("[+]请输入加密方式 [默认AES，后期在加]")
 		fmt.Scanln(&enmode)
 		if enmode == "AES" {
-			fmt.Println("[+]请输入AES加密方式 [默认1，1=Ecb 2=Cbc 3=Ctr 4=Cfb 5=Ofb]")
+			fmt.Println("[+]请输入AES加密方式 [默认1 除1以外 其他密码输入必须为16位，1=Ecb 2=Cbc 3=Ctr 4=Cfb 5=Ofb]")
 			fmt.Scanln(&aesmode)
 			fmt.Println("[+]请输入自定义密钥 [默认 happy@2022]")
 			fmt.Scanln(&aeskey)
