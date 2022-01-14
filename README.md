@@ -9,11 +9,15 @@
 1. 2022-1-1 修复BUG，国内全国，WDF过，卡巴过。
 2. 2022-1-5 测试仍免杀并优化代码。
 3. 2022-1-10 增加反沙箱
-## 祝大家新年快乐！
+## 使用方法
 使用方法：
 go run main -h
 可以使用Garbel混淆
 ![image](https://user-images.githubusercontent.com/82130343/147438586-2ec0c4d5-2e8b-4689-a203-1236afc44f2e.png)
+
+## 问题
+1.不上线问题 
+  部分CS生成Payload 需要勾选X64 或者使用C2 Profile文件 解决。
 
 ### 测试：
 ![image](https://user-images.githubusercontent.com/82130343/147844223-17b1f5dd-73a8-40c4-9c5e-24526bfb7235.png)
