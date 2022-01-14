@@ -9,7 +9,7 @@
 1. 2022-1-1 修复BUG，国内全国，WDF过，卡巴过。
 2. 2022-1-5 测试仍免杀并优化代码。
 3. 2022-1-10 增加反沙箱
-4. 2022-1-14 杀软检测加密方式【假期后修复】
+4. 2022-1-14 修复免杀
 ## 使用方法
 使用方法：
 go run main -h
@@ -23,8 +23,12 @@ go run main -h
 <br />
 
 ### 测试：
-![image](https://user-images.githubusercontent.com/82130343/147844223-17b1f5dd-73a8-40c4-9c5e-24526bfb7235.png)
-![image](https://user-images.githubusercontent.com/82130343/147844227-47d46c2b-0a63-4c39-97ff-c65d7c33b764.png)
+![image](https://user-images.githubusercontent.com/82130343/149538762-f6201652-36a0-499b-843b-641c037465ac.png)
+![image](https://user-images.githubusercontent.com/82130343/149538796-bcf6ee56-94c0-46d1-9785-5ad0f9aa75de.png)
+![image](https://user-images.githubusercontent.com/82130343/149538885-0e9be101-6bdd-4556-ae05-8900fe3971d3.png)
+
+
+
 ### 上线
 ![image](https://user-images.githubusercontent.com/82130343/147844234-3580502d-ed13-4be9-89e9-2fb4ad7e0b5f.png)
 ![631dd04ce2b3c5f548ad8b99c979db5](https://user-images.githubusercontent.com/82130343/147847431-cd4cfb42-ca9b-4a05-aca3-1ab0f2d80eea.png)
