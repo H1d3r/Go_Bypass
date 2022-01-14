@@ -17,7 +17,9 @@ go run main -h
 
 ## 问题
 1.不上线问题 
-  部分CS生成Payload 需要勾选X64 或者使用C2 Profile文件 解决。
+<br />部分CS生成Payload 需要勾选X64 或者使用C2 Profile文件 解决。
+<br />Some CS-generated payloads require gou'xX64 or use the C2 Profile to resolve.
+<br />
 
 ### 测试：
 ![image](https://user-images.githubusercontent.com/82130343/147844223-17b1f5dd-73a8-40c4-9c5e-24526bfb7235.png)
