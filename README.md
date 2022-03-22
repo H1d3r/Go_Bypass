@@ -39,6 +39,10 @@ go run main -h
 ### 演示视频
 https://www.bilibili.com/video/BV1Ym4y1Q7kf#reply97248324864
 
+# 免责声明：
+本代码仅用于学习，授权使用，下载后请勿用于非法用途。
+本人不参加任何HVV行动，任何活动与我无瓜。
+
 后续模等待添加.............
 ## 微信公众：一颗好韭菜
 ![8da12679da6d22c1c68464f4c1d64f8](https://user-images.githubusercontent.com/82130343/147440529-e6efd14d-6d2b-4161-9e9e-3543877539cb.jpg)
