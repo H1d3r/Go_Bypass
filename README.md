@@ -12,10 +12,12 @@
 4. 2022-1-14 修复免杀
 5. 2022-2-22 解决标记
 6. 2022-3-22 动态解决特征标记
+7. 2022-6-27 修复免杀，闭源主EXE
 ## 使用方法
 使用方法：
-go run main -h
-可以使用Garbel混淆
+go mod download
+main.exe -h
+可以使用Garbel混淆,效果可能会拉。
 ![image](https://user-images.githubusercontent.com/82130343/147438586-2ec0c4d5-2e8b-4689-a203-1236afc44f2e.png)
 
 ## 问题
@@ -24,10 +26,10 @@ go run main -h
 <br />Some CS-generated payloads require gou'xX64 or use the C2 Profile to resolve.
 <br />
 
-### 测试：
-![image](https://user-images.githubusercontent.com/82130343/149538762-f6201652-36a0-499b-843b-641c037465ac.png)
-![image](https://user-images.githubusercontent.com/82130343/149538796-bcf6ee56-94c0-46d1-9785-5ad0f9aa75de.png)
-![image](https://user-images.githubusercontent.com/82130343/149538885-0e9be101-6bdd-4556-ae05-8900fe3971d3.png)
+### 2022/06/27 测试：
+![image](https://user-images.githubusercontent.com/82130343/175862101-afd0d347-5427-4956-a9ca-1650dc748990.png)
+![image](https://user-images.githubusercontent.com/82130343/175862139-391a4366-050b-4151-a8be-e6b4427a875f.png)
+
 
 
 
