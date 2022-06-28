@@ -28,13 +28,13 @@ main.exe -h
 <br />部分CS生成Payload 需要勾选X64 或者使用C2 Profile文件 解决。
 <br />Some CS-generated payloads require gou'xX64 or use the C2 Profile to resolve.
 <br />
+<br />
 2.运行报错问题
+<br />
 ![image](https://user-images.githubusercontent.com/82130343/176105293-5083d76b-e1c0-464b-8be0-3bcd87c264c2.png)
 <br />如有以上问题，请按照以下命令了解决
 <br />go mod download
 <br />go get github.com/gonutz/ide/w32
-
-
 
 ### 2022/06/27 测试：
 ![image](https://user-images.githubusercontent.com/82130343/175862101-afd0d347-5427-4956-a9ca-1650dc748990.png)
