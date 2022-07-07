@@ -34,7 +34,7 @@ main.exe -h
 ![image](https://user-images.githubusercontent.com/82130343/176105293-5083d76b-e1c0-464b-8be0-3bcd87c264c2.png)
 <br />如有以上问题，请按照以下命令了解决
 <br />go mod download
-<br />go get github.com/gonutz/ide/w32
+<br />go get github.com/gonutz/ide
 
 ### 2022/06/27 测试：
 ![image](https://user-images.githubusercontent.com/82130343/175862101-afd0d347-5427-4956-a9ca-1650dc748990.png)
