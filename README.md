@@ -1,5 +1,7 @@
 # Go_Bypass
 一个免杀生成器模板，目前可以过国内主流杀毒。
+20220716 视频演示
+https://mp.weixin.qq.com/s/hLjBa-0uka2GAxjnJRblwA
 ## 捆绑功能 2022-3-22
 1. Golang 捆绑文件体积优化 3M 左右
 2. 捆绑走HTTP请求
