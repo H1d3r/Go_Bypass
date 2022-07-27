@@ -18,6 +18,15 @@ https://mp.weixin.qq.com/s/hLjBa-0uka2GAxjnJRblwA
 7. 2022-6-27 修复免杀，闭源主EXE,这次的主要优化方面  免杀一次很持久
 8. 2022-7-16 多编译模式，由于三六零查杀编译特征，所以本次更新多种编译方式，具体生产12 个exe，只需要12个exe 去批量扫描，留下存活的就是蛊王
 9. 2022-07-27 等待更新吧，现在发可能有钓鱼的嫌疑。
+
+
+### 测试 2022/07/27
+测试的编译方式为Garble
+<img width="1169" alt="image" src="https://user-images.githubusercontent.com/82130343/181239313-01bda048-9a88-4f2e-a1c1-ef7c6e0702d9.png">
+https://www.virscan.org/report/38593d4c816d0358e6a23d6ad48eb80d770278133c855d67381b2e02d9be94d9
+<img width="1288" alt="image" src="https://user-images.githubusercontent.com/82130343/181245219-0e1101e8-27c5-473e-9021-7538f5798331.png">
+![image](https://user-images.githubusercontent.com/82130343/181245827-761de9f8-a010-4799-b446-df549f3ba9ac.png)
+
 ## 使用方法
 使用方法：
 <br />
@@ -41,16 +50,6 @@ go install mvdan.cc/garble@latest
 <br />如有以上问题，请按照以下命令了解决
 <br />go mod download
 <br />go get github.com/gonutz/ide
-
-### 2022/07/27
-测试的编译方式为Garble
-<img width="1169" alt="image" src="https://user-images.githubusercontent.com/82130343/181239313-01bda048-9a88-4f2e-a1c1-ef7c6e0702d9.png">
-https://www.virscan.org/report/38593d4c816d0358e6a23d6ad48eb80d770278133c855d67381b2e02d9be94d9
-<img width="1288" alt="image" src="https://user-images.githubusercontent.com/82130343/181245219-0e1101e8-27c5-473e-9021-7538f5798331.png">
-![image](https://user-images.githubusercontent.com/82130343/181245827-761de9f8-a010-4799-b446-df549f3ba9ac.png)
-
-
-
 
 ### 上线
 ![image](https://user-images.githubusercontent.com/82130343/147844234-3580502d-ed13-4be9-89e9-2fb4ad7e0b5f.png)
